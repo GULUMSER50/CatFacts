@@ -21,7 +21,12 @@ This project is a Python application designed to fetch cat facts from an online 
      - Saves the fetched cat facts to the database.
      - Retrieves and prints the cat facts from the database.
 
-4. **API Interaction**:
+4. **Streamlit Application (`app.py`)**:
+   - Provides a web interface to fetch and display cat facts.
+   - Uses Streamlit to create a simple UI with a button to trigger the script manually.
+   - Displays the cat facts in the Streamlit app.
+
+5. **API Interaction**:
    - Uses the `requests` library to fetch data from the `catfact.ninja` API.
    - Implements retry logic to handle transient errors when fetching data from the API.
 
@@ -31,5 +36,21 @@ The project is structured to handle errors gracefully, ensuring that the applica
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/GulumserEskiturk/cat-facts-project.git
-   cd cat-facts-project
+   git clone https://github.com/GULUMSER50/CatFacts.git
+   cd CatFacts
+   ```
+   
+2. Install the required dependencies:
+   ```sh
+    pip install -r requirements.txt
+    ```
+   
+3. Run the Streamlit application:
+    ```sh
+    streamlit run app.py
+    ```
+   
+4. Open the URL displayed in the terminal to access the Streamlit app.
+
+
+    
